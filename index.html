@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6f3f1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1b1918" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <!-- title / description / lang are re-set by the UI when the language toggles (src/ui/ui.ts) -->
+    <title>ภาพจำลองซิลิโคนเสริมหน้าอก 3 มิติ · 3D Breast Implant Visualizer</title>
+    <meta name="description" content="ภาพจำลอง 3 มิติเพื่อการศึกษา ไม่ใช่เครื่องมือแพทย์ ข้อมูลอยู่ในอุปกรณ์ของคุณเท่านั้น · Free 3D breast implant visualizer for education. Not a medical device. Nothing you enter leaves your device." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="3D Breast Implant Visualizer · ภาพจำลองซิลิโคนเสริมหน้าอก 3 มิติ" />
+    <meta property="og:description" content="Free, browser-only 3D illustration for education (TH/EN). Not a medical device, not a prediction. Nothing you enter leaves your device." />
+    <meta property="og:locale" content="th_TH" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <!-- og:image / og:url must be absolute: fill in after deploying (see README "Deploy") -->
+    <meta property="og:image" content="./icons/icon-512.png" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <script type="module" crossorigin src="./assets/index-D3QGFx2o.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CW7UzSX6.css">
+  </head>
+  <body>
+    <header class="top">
+      <h1 id="title">Implant Visualizer</h1>
+      <button id="lang" type="button">EN</button>
+    </header>
+    <main class="layout">
+      <div class="stage"><div id="viewer" role="img"><div class="loading" aria-hidden="true"></div></div></div>
+      <div id="panel" class="panel"></div>
+    </main>
+    <footer id="foot" class="foot"></footer>
+    <dialog id="disclaimer"></dialog>
+  </body>
+</html>

@@ -20,8 +20,8 @@
     <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./icons/icon-192.png" />
     <link rel="manifest" href="./manifest.webmanifest" />
-    <script type="module" crossorigin src="./assets/index-D3QGFx2o.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CW7UzSX6.css">
+    <script type="module" crossorigin src="./assets/index-BRaL-bXY.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-ZLCGC72K.css">
   </head>
   <body>
     <header class="top">
@@ -29,9 +29,11 @@
       <button id="lang" type="button">EN</button>
     </header>
     <main class="layout">
-      <div class="stage"><div id="viewer" role="img"><div class="loading" aria-hidden="true"></div></div></div>
+      <div class="stage"><div id="viewer" role="img"><div class="loading" aria-hidden="true"></div></div><div id="stage-ui" class="stage-ui"></div></div>
       <div id="panel" class="panel"></div>
     </main>
+    <!-- phone layout: bottom tab bar (src/ui/ui.ts buildTabs); hidden on wide screens -->
+    <nav id="tabs" class="tabs"></nav>
     <footer id="foot" class="foot"></footer>
     <dialog id="disclaimer"></dialog>
   </body>

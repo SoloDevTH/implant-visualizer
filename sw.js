@@ -1,10 +1,10 @@
-// Service worker template; vite.config.ts fills 777a3258 / ["index.html","manifest.webmanifest","icons/icon.svg","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","models/base-female.glb","models/base-female-cups.bin","models/augment-atlas.bin","assets/index-BRaL-bXY.js","assets/viewer-DGDAsqOv.js","assets/index-ZLCGC72K.css"] at build and emits dist/sw.js.
+// Service worker template; vite.config.ts fills ea818b77 / ["index.html","manifest.webmanifest","icons/icon.svg","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","models/base-female.glb","models/base-female-cups.bin","models/augment-atlas.bin","models/augment-variants.bin","assets/index-3b94ELAK.js","assets/viewer-CurlPErf.js","assets/index-DS82JbpF.css"] at build and emits dist/sw.js.
 // index.html: network-first (fresh deploys win), cached copy offline. Everything else (hashed assets,
 // icons, manifest): cache-first. A new build = new cache name; old caches are deleted on activate.
 // No skipWaiting: the new worker takes over once all tabs of the old version are closed, so an open
 // page never loses the lazy viewer chunk it was built against.
-const CACHE = 'implant-sim-777a3258';
-const PRECACHE = ["index.html","manifest.webmanifest","icons/icon.svg","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","models/base-female.glb","models/base-female-cups.bin","models/augment-atlas.bin","assets/index-BRaL-bXY.js","assets/viewer-DGDAsqOv.js","assets/index-ZLCGC72K.css"];
+const CACHE = 'implant-sim-ea818b77';
+const PRECACHE = ["index.html","manifest.webmanifest","icons/icon.svg","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","models/base-female.glb","models/base-female-cups.bin","models/augment-atlas.bin","models/augment-variants.bin","assets/index-3b94ELAK.js","assets/viewer-CurlPErf.js","assets/index-DS82JbpF.css"];
 const INDEX = new URL('index.html', self.registration.scope).href;
 
 self.addEventListener('install', (e) => {
